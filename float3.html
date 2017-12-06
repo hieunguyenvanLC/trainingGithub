@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+
+<head>
+	<title>Box Shadow</title>
+	<meta charset="utf-8" />
+	<style>
+		#wrapper {
+			width: 80%;
+			border: 1px solid #ccc;
+			margin: auto;
+			background-color: blueviolet;
+			
+		}
+		
+		#wrapper:after{
+			content: '';
+			display: block;
+			clear: both;
+		}
+		
+	
+		#main_content {
+			float: left;
+			width: 70%;
+			height: 500px;
+			background-color: aquamarine;
+		}
+		
+		#side_content {
+			float: left;
+			width: 30%;
+			
+			background-color: rgb(163, 162, 12);
+		}
+		
+		clear {
+			clear: both;
+		}
+
+	</style>
+</head>
+
+<body>
+	<div id="wrapper">
+		<div id="main_content">
+			<p>This is main content</p>
+		</div>
+		<div id="side_content">
+			<p>This is side content</p>
+		</div>
+		
+		<div class="clear"></div>
+	</div>
+	<p>
+		This is the footer
+	</p>
+	
+</body>
+	
+
+</html>
