@@ -1,0 +1,349 @@
+*,
+html {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-size: 100%;
+	font-family: arial, serif, sans-serif;
+}
+
+h1 {
+	font-size: 1.3125em;
+	margin-bottom: 10px;
+}
+
+
+/*em = target / base */
+
+h3 {
+	font-size: 1.0625em;
+	color: blueviolet !important;
+}
+
+header h1,
+header h3 {
+	text-transform: uppercase;
+}
+
+header {
+	font-weight: bold;
+	color: #fff;
+	background-image: url('img/header.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-left: 40px;
+	padding-right: 40px;
+	padding-top: 50px;
+	padding-bottom: 100px;
+	text-align: center;
+	background-color: darkgrey;
+	/*Backup background color*/
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+
+/*dau mui ten the hien con truc tiep*/
+
+header ul {
+	list-style: none;
+}
+
+header ul>li {
+	display: inline-block;
+	margin-right: 20px;
+}
+
+header ul>li>a {
+	color: #fff;
+	font-weight: normal;
+}
+
+header nav {
+	margin-bottom: 100px;
+}
+
+.link_button {
+	border: 1px solid #6ac4bc;
+	background-color: #6ac4bc;
+	color: #000;
+	padding: 5px;
+}
+
+.link_button:hover {
+	text-decoration: none;
+	border-color: #ccc;
+}
+
+#intro {
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+#intro>img {
+	margin-top: 30px;
+	height: 150px;
+	border-radius: 50%;
+}
+
+#intro a {
+	display: inline-block;
+}
+
+#intro>div,
+#intro>img {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+
+/*format for section id service */
+
+#service>h2 {
+	text-align: center;
+	background-image: url('img/1.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 130px;
+	font-size: 1.875em;
+	line-height: 130px;
+}
+
+.project {
+	padding: 20px;
+	text-align: center;
+	border-bottom: 1px solid #ccc;
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.project img {
+	height: 150px;
+}
+
+.project li {
+	list-style-position: inside;
+}
+
+.project div {
+	text-align: left;
+}
+
+.project div,
+.project img {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.project ul {
+	text-indent: 25px;
+	list-style-type: circle;
+}
+
+footer p {
+	margin-top: 10px;
+	text-align: center;
+	margin-bottom: 5px;
+}
+
+footer p>i {
+	margin-left: 10px;
+}
+
+
+/*Format for Experience page*/
+
+#experience_wrapper {
+	width: 90%;
+	margin: 20 auto;
+	text-align: center;
+}
+
+#work {
+	margin: 50px;
+}
+
+section#work,
+section#project_done {
+	margin-bottom: 100px;
+	
+}
+
+#tbl_work {
+	margin: 5px auto;
+	text-align: left;
+	border: 1px solid blue;
+	border-spacing: 0 1px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+table#tbl_work thead th {
+	border-bottom: 2px solid blue;
+	padding: 10px;
+	color: blue;
+	background-color: aqua
+}
+
+table#tbl_work thead th:first-child{
+	border-top-left-radius: 10px;
+	
+}
+
+table#tbl_work thead th:last-child{
+	border-top-right-radius: 10px;
+}
+
+table#tbl_work tbody tr td {
+	padding: 10px;
+}
+
+table#tbl_work tbody tr{
+	background-color: rgb(161,237,159);
+	
+}
+/*
+table#tbl_work tbody tr:nth-child(even) {
+	background-color: rgb(161, 237, 159);
+}
+
+table#tbl_work tbody tr:nth-child(odd) {
+	background-color: rgb(224, 185, 85);
+}
+*/
+
+
+
+table#tbl_work tbody tr:hover {
+	background-color: rgb(201, 126, 237);
+	cursor: pointer;
+}
+
+
+
+
+
+#calendar thead tr td {
+	padding: 50px 10px;
+	text-align: left;
+	background-color: pink;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	font-size: 30px;
+	color: white;
+}
+
+#calendar tbody tr td{
+	padding: 10px;
+}
+
+#calendar tbody tr {
+	border: 1px solid red;
+	
+}
+#dayName {
+	
+	color: hotpink;
+	
+}
+
+#calendar {
+	border-radius: 10px;
+	border: 1px solid red;
+	text-align: center;
+	
+}
+
+#calendar: first-child{
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+#calendar: last-child{
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+section#project_done{
+	
+	margin: 50px;
+}
+
+#Nutrition_Facts {
+	margin: 60px auto;
+	border: 1px solid black;
+	
+}
+
+#Nutrition_Facts thead tr td{
+	text-align: left;
+	border-bottom: 5px solid black;
+}
+
+/*format for project page*/
+
+#project_list {
+    margin-bottom: 50px;
+    text-align: center;
+    float: left;
+    width: 75%;
+}
+
+#project_benefit {
+    float: left;
+    width: 25%;
+}
+
+#project_benefit ul {
+    list-style-position: inside;
+    text-indent: 25px;
+
+}
+
+header h1, h3 {
+    text-transform: uppercase;
+}
+
+.project_list_wrapper {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.project_item {
+    display: inline-block;
+    margin: 5px;
+    border: 1px solid #ccc;
+    padding: 5px;
+    box-shadow: 2px 2px #ccc;
+    box-shadow: 2px 2px #ccc;
+    box-shadow: 2px 2px #ccc;
+}
+
+.project_item img {
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.project_item_details {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+}
+
+.project_item_details ul {
+    list-style-position: inside;
+    text-indent: 20px;
+}
+

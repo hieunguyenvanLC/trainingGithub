@@ -1,0 +1,149 @@
+<!doctype html>
+<!--4 loai position : static, fixed, relative, absolute-->
+<html>
+	<head>
+	<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
+	<title>Position</title>
+	<meta charset="utf-8" />
+	<style>
+		*,
+		html {
+			padding: 0;
+			margin: 0;
+		}
+		
+		ul {
+			padding: 20px 30px;
+			list-style: none;
+		}
+		
+		ul li {
+			display: inline-block;
+			margin-right: 15px;
+			font-weight: bold;
+			color: #333;
+			position: relative;
+		}
+		
+		header {
+			background-color: rgb(39, 190, 50);
+			position: fixed;
+			left: 0;
+			top: 0;
+			width: 100%;
+		}
+		
+		#body {
+			background-color: rgba(173, 169, 169, 0.27);
+			height: 1000px;
+		}
+		
+		#chatbox {
+			width: 200px;
+			height: 300px;
+			background-color: rgb(39, 190, 50);
+			position: fixed;
+			right: 20px;
+			bottom: 0;
+			padding-left: 1px;
+			padding-right: 1px;
+		}
+		
+		#box-header {
+			height: 30px;
+			text-align: center;
+			line-height: 30px;
+			background-color: rgb(163, 166, 29);
+		}
+		
+		#box-content {
+			background-color: #fff;
+			height: 100%;
+		}
+		
+		#rel1 {
+			background-color: red;
+			position: relative;
+			left: -50px;
+			top: -20px;
+			z-index: 1;
+		}
+		
+		#abs {
+			background-color: green;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+		
+		#main-content {
+			border: 1px solid #ccc;
+			margin: 100px;
+			width: 80%;
+			padding: 10px;
+			position: relative;
+		}
+		
+		.count {
+			display: inline-block;
+			width: 20px;
+			height: 20px;
+			border: 1px solid red;
+			line-height: 20px;
+			text-align: center;
+			border-radius: 50%;
+			background: red;
+			color: #fff;
+			position: absolute;
+			right: -10px;
+			top: -15px;
+		}
+		
+		#input-search {
+			padding: 5px;
+			width: 200px;
+			border: none;
+			outline: 0;
+			border-radius: 93px 93px 108px 108px / 78px 78px 84px 84px;
+			padding-left: 25px;
+		}
+		#HieuSearch{
+			position: relative;
+			
+		}
+		#iconSearch{
+			position: absolute;
+			left: 6px;
+			top: 4px;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="chatbox">
+		<div id="box-header">tool</div>
+		<div id="box-content" contenteditable="true">
+			chat content
+		</div>
+	</div>
+	<header>
+		<ul>
+			<li>Home</li>
+			<li>Message <span class="count">5</span></li>
+			<li>Notification</li>
+			<li>Help</li>
+			<li id="HieuSearch">
+				<input type="text" id="input-search" />
+				<span id="iconSearch"><i class="fa fa-search" aria-hidden ="true"></i></span>
+			</li>
+		</ul>
+	</header>
+	<section id="body">
+		<div id="main-content">
+			Với doanh thu 45 triệu USD,<span id="rel1"> A Werewolf Boy là bộ phim ăn khách thứ tư năm 2012 tại Hàn Quốc và vẫn đứng đầu trong danh sách các tác phẩm lãng mạn cho đến nay</span> ... <span id="abs">Với doanh thu 45 triệu USD,</span> A Werewolf Boy là bộ phim ăn khách thứ tư năm 2012 tại Hàn Quốc và vẫn đứng đầu trong danh sách các tác phẩm lãng mạn cho đến nay ...
+
+		</div>
+	</section>
+</body>
+	
+</html>
